@@ -8,6 +8,7 @@ TagManager:
   - pickup
   - PickUp
   - Enemy
+  - DieCube
   layers:
   - Default
   - TransparentFX
