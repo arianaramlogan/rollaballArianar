@@ -63,19 +63,29 @@ public class PlayerController : MonoBehaviour
  
  void OnTriggerEnter(Collider other) 
     {
- // Check if the object the player collided with has the "PickUp" tag.
+ 
  if (other.gameObject.CompareTag("PickUp")) 
         {
- // Deactivate the collided object (making it disappear).
             other.gameObject.SetActive(false);
-
- // Increment the count of "PickUp" objects collected.
             count = count + 1;
-
- // Update the count display.
             SetCountText();
+            
         }
+
+if (other.gameObject.CompareTag("SpeedBoost")) 
+        {
+            other.gameObject.SetActive(false);
+            speed = speed + 3;
+            SetCountText();
+            
+        }
+
+
+
+
+
     }
+
 
  // Function to update the displayed count of "PickUp" objects collected.
  void SetCountText() 

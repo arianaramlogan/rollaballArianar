@@ -9,6 +9,7 @@ TagManager:
   - PickUp
   - Enemy
   - DieCube
+  - SpeedBoost
   layers:
   - Default
   - TransparentFX
